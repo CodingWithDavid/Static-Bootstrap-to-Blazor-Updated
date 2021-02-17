@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,17 +8,40 @@
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
+    <!-- Custom fonts for this theme -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href="_content/Blazored.Toast/blazored-toast.css" rel="stylesheet" />
+    <link href="_content/Blazored.Modal/blazored-modal.css" rel="stylesheet" />
+
+    <link href="/css/freelancer.css" rel="stylesheet" />
+
+    <script src="_content/Blazored.Modal/blazored.modal.js"></script>
 </head>
 
 <body>
     <app>Loading...</app>
 
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
-    </div>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        function scrollToAnchor(anchor) {
+            var selector = anchor || document.location.hash;
+            if (selector && selector.length > 1) {
+                var element = document.querySelector(selector);
+                if (element) {
+                    var y = element.getBoundingClientRect().top + window.pageYOffset;
+                    /*The following code line updates a vertical scroll bar's offset for a standard Blazor Visual Studio template. 
+                    Update the code to get an offset that is suitable for your application.*/
+                    //y -= document.querySelector(".main .top-row").offsetHeight;
+                    window.scroll(0, y - 15);
+                }
+            }
+            else
+                window.scroll(0, 0);
+        }
+    </script>
 </body>
 
 </html>
