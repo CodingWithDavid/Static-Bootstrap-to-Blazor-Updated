@@ -1,24 +1,53 @@
-# Blazor Starter Application
+# Bootstrap static web site to Blazor Application (Updated)
 
-This template contains an example [Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-3.1#blazor-webassembly) client application, a C# [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) and a C# class library with shared code.
+I was working with Azure Static websites and I decide I wanted to create a blog post about it.  
+
+
+by [David Gallivan](http://twitter.com/CodingwithDavid)
+
+
+## Why
+
+Instead of doing a simple weather forecast application like all the others, I decided to update one of my original Blazor projects I blog about.  The original project was built back in November 2019.  A lot has changed since then.
+
+This project is the result of that update.
 
 ## Getting Started
 
-Create a repository from the [GitHub template](https://docs.github.com/en/enterprise/2.22/user/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) and then clone it locally to your machine.
+1. Clone this repository
 
-Once you clone the project, open the solution in [Visual Studio](https://visualstudio.microsoft.com/vs/community/) and follow these steps:
+   ```Command Line
+   git clone https://github.com/CodingWithDavid/Static-Bootstrap-to-Blazor-Updated
+   cd Static-Bootstrap-to-Blazor-Updated
+   ```
 
-- Rename `local.settings.example.json` to `local.settings.json`
-- Press **F5** to launch both the client application and the Functions API app
+1.	Open in Visual Studio or Visual Code
+a.	With Visual Code you will need to install the C# extensions
+b.  With Visual Code you will need to install the Blazor extensions
+2.	Press F5
 
-_Note: If you're using the Azure Functions CLI tools, refer to [the documentation](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash) on how to enable CORS._
+## What's in the App
 
-## Template Structure
+1. Created by a new Azure Website web assembly project template directly in Github to my repository
+2. Updated Blazored Modal
+3. Updated Blazored Toast
+3. Refactored the javascript work around for same page anchor tag navigation to a script block in the index.html instead of a separate js file.
+4. Refactored the portfolio and contact me services into Azure functions
 
-* **Client**: The Blazor WebAssembly sample application
-* **API**: A C# Azure Functions API, which the Blazor application will call
-* **Shared**: A C# class library with a shared data model between the Blazor and Functions application
+## Problems or Suggestions
 
-## Deploy to Azure Static Web Apps
+[Open an issue here]( https://github.com/CodingWithDavid/UICommonDialogs/issues)
 
-This application can be deployed to [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps), to learn how, check out [our quickstart guide](https://aka.ms/blazor-swa/quickstart).
+## Thank You
+
+
+## Resources
+
+- [Chris Sainty's Blazored Modal] (https://github.com/Blazored/modal)
+- [Chris Sainty's Blazored Toast] (https://github.com/Blazored/toast)
+- [Blazor Azure static websites] (https://docs.microsoft.com/en-us/azure/static-web-apps/deploy-blazor)
+- [VS Code](https://code.visualstudio.com)
+- [Visual Studio]( https://visualstudio.microsoft.com/)
+
+
+
