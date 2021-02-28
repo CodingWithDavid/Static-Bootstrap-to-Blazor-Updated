@@ -36,16 +36,16 @@ b.  With Visual Code you will need to install the Blazor extensions
 
 ## Problems or Suggestions
 
-[Open an issue here]( https://github.com/CodingWithDavid/UICommonDialogs/issues)
+[Open an issue here]( https://github.com/CodingWithDavid/Static-Bootstrap-to-Blazor-Updated/issues)
 
 ## Thank You
 
 
 ## Resources
 
-- [Chris Sainty's Blazored Modal] (https://github.com/Blazored/modal)
-- [Chris Sainty's Blazored Toast] (https://github.com/Blazored/toast)
-- [Blazor Azure static websites] (https://docs.microsoft.com/en-us/azure/static-web-apps/deploy-blazor)
+- [Chris Sainty's Blazored Modal](https://github.com/Blazored/modal)
+- [Chris Sainty's Blazored Toast](https://github.com/Blazored/toast)
+- [Blazor Azure static websites](https://docs.microsoft.com/en-us/azure/static-web-apps/deploy-blazor)
 - [VS Code](https://code.visualstudio.com)
 - [Visual Studio]( https://visualstudio.microsoft.com/)
 
